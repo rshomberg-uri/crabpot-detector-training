@@ -1,0 +1,17 @@
+# Minimal environment for this repo only. Deliberately lean: this project needs
+# none of GhostVision's heavy stack (GDAL, PINGMapper, tensorflow, Roboflow) -
+# just Python, an image library, and the training/eval tools below.
+#
+# Create it with:   conda env create -f environment.yml
+# Activate it with: conda activate crabpot-training
+name: crabpot-training
+channels:
+  - conda-forge
+dependencies:
+  - python=3.12
+  - pip
+  - pip:
+      - pillow        # image loading, used by dataset_to_yolo.py
+      - pyyaml        # reads/writes data.yaml
+      - ultralytics   # YOLO training + inference (pulls in torch automatically)
+      - supervision   # the metrics library evaluate.py uses to score results

@@ -1,0 +1,26 @@
+# Trained models, converted datasets, and run logs are big and reproducible -
+# regenerate them with the scripts rather than committing them.
+runs/
+*.pt
+*.onnx
+__pycache__/
+*.pyc
+
+# The converted YOLO-format dataset and raw downloaded dataset, if you keep
+# either inside this repo folder for convenience.
+/dataset/
+/*-yolo/
+
+# Cluster conveniences that shouldn't be committed: a symlink to a shared
+# dataset, Ultralytics' auto-downloaded helper weights, and Slurm job logs.
+/data
+weights/
+*.log
+
+# Figures written by visualize.py - regenerate rather than commit.
+figures/
+
+# Site-specific settings and instructions for whichever cluster you're on.
+# The committed template is cluster.env.example.
+cluster.env
+UNITY.md
