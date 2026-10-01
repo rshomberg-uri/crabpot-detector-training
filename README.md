@@ -1,9 +1,10 @@
-# Crab Pot Detector Training
+# Ghost Gear Detector Training
 
-Standalone code for training and scoring your own object-detection model on the
-GhostVision derelict-crab-pot side-scan sonar dataset — independent of the
-GhostVision app itself. No GUI, no Roboflow account, no GhostVision package. Just
-three scripts: convert the data, train a model, score it.
+Standalone code for training and scoring your own object-detection model that
+finds ghost gear (lost or abandoned fishing gear) in side-scan sonar. It uses
+the GhostVision derelict-crab-pot dataset, independent of the GhostVision app
+itself. No GUI, no Roboflow account, no GhostVision package. Just four scripts:
+convert the data, train a model, score it, and look at what it does.
 
 This exists to reproduce (as closely as reasonably possible) the training setup
 described in the paper this dataset comes from:
