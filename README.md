@@ -171,3 +171,8 @@ methodology.
 - Supervision docs (the scoring library): https://supervision.roboflow.com/
 - GhostVision itself (the full app this dataset/paper also powers, not needed
   for anything in this repo): https://github.com/PINGEcosystem/GhostVision
+
+## License
+
+MIT — see [LICENSE](LICENSE). The dataset and the pretrained checkpoints have
+their own terms; see their pages linked above.
